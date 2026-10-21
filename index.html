@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101014">
+    <meta name="description" content="ServilightGG: impresión, personalización textil, regalos personalizados y soluciones gráficas en San Cristóbal, República Dominicana.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101014'/%3E%3Ctext x='32' y='43' font-size='30' font-weight='900' text-anchor='middle' fill='%23FFD928' font-family='Arial'%3ESG%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_DO">
+    <meta property="og:title" content="ServilightGG | Soluciones que dejan huella">
+    <meta property="og:description" content="Impresión, personalización textil, regalos personalizados y soluciones gráficas en San Cristóbal, República Dominicana.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"ServilightGG","telephone":"+18095278494","email":"ventasservilight@outlook.com","address":{"@type":"PostalAddress","streetAddress":"Calle Circunvalación #98, Lavapiés","addressLocality":"San Cristóbal","addressCountry":"DO"}}</script>
+    <title>ServilightGG | Soluciones que dejan huella</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --yellow: #FFD928;
+            --pink: #FF5FA2;
+            --blue: #237BFF;
+            --black: #101014;
+            --dark: #191920;
+            --white: #FFFFFF;
+            --gray: #A7A7B3;
+            --light: #F5F5F8;
+            --border: #30303A;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { font-family: 'Montserrat', sans-serif; color: var(--black); background: var(--white); line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+        button { font: inherit; }
+        button, a { -webkit-tap-highlight-color: transparent; }
+        .container { width: min(1180px, 90%); margin: auto; }
+
+        /* NAVEGACIÓN */
+        .navbar { position: sticky; top: 0; z-index: 1000; background: rgba(16, 16, 20, .97); border-bottom: 1px solid #30303A; backdrop-filter: blur(12px); }
+        .nav-content { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+        .logo { display: flex; align-items: center; flex: 0 0 auto; min-width: 0; max-width: 100%; text-decoration: none; }
+        .brand-logo { display: block; width: 460px; height: 92px; max-width: 100%; flex-shrink: 0; object-fit: contain; object-position: left center; background: transparent; border: 0; box-shadow: none;  }
+        .logo-fallback { color: #FFFFFF; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 900; letter-spacing: -1.5px; white-space: nowrap; }
+        .logo-fallback span { color: #FFD928; }
+        .nav-links { display: flex; align-items: center; gap: 25px; }
+        .nav-links a { color: #E9E9EF; font-size: .85rem; font-weight: 600; transition: color .2s; }
+        .nav-links a:hover { color: var(--yellow); }
+        .nav-cta { padding: 12px 17px; background: var(--blue); color: var(--white) !important; border-radius: 7px; }
+
+        /* PORTADA CON IMAGEN PROPIA */
+        .hero { position: relative; overflow: hidden; color: var(--white); background: var(--black); padding: 88px 0; }
+        .hero::before { content: ""; position: absolute; width: 390px; height: 390px; right: -120px; top: -170px; border: 65px solid rgba(255, 95, 162, .10); border-radius: 50%; pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 55px; }
+        .eyebrow { display: inline-block; color: var(--yellow); font-size: .8rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+        .hero h1 { max-width: 700px; font-size: clamp(2.7rem, 6vw, 5rem); font-weight: 900; line-height: 1.06; letter-spacing: -3px; margin-bottom: 24px; }
+        .hero h1 .highlight { color: var(--yellow); }
+        .hero p { max-width: 590px; color: #C7C7D1; font-size: 1rem; margin-bottom: 32px; }
+        .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; }
+        .btn { display: inline-flex; justify-content: center; align-items: center; gap: 9px; padding: 14px 22px; border: 0; border-radius: 7px; font-size: .88rem; font-weight: 800; cursor: pointer; transition: transform .2s, opacity .2s; }
+        .btn:hover { transform: translateY(-3px); }
+        .btn-yellow { color: var(--black); background: var(--yellow); }
+        .btn-outline { color: var(--white); background: transparent; border: 1px solid #555560; }
+        .hero-visual { position: relative; min-width: 0; }
+        .hero-photo { position: relative; width: 100%; aspect-ratio: 5 / 4; overflow: hidden; border: 8px solid rgba(255,255,255,.08); border-radius: 16px 4px 16px 4px; background: linear-gradient(135deg, rgba(255,217,40,.18), rgba(35,123,255,.2), rgba(255,95,162,.2)), #202028; box-shadow: 0 25px 70px rgba(0,0,0,.35); }
+        .hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+        .hero-placeholder { display: flex; position: absolute; inset: 0; flex-direction: column; align-items: center; justify-content: center; gap: 13px; padding: 22px; text-align: center; color: var(--white); background: linear-gradient(135deg, rgba(255,217,40,.1), rgba(35,123,255,.15), rgba(255,95,162,.13)); }
+        .hero-placeholder .upload-symbol { display: grid; place-items: center; width: 76px; height: 76px; border-radius: 20px; background: var(--yellow); color: var(--black); font-size: 2.3rem; }
+        .hero-placeholder strong { font-size: 1.05rem; }
+        .hero-placeholder small { max-width: 290px; color: #D6D6DF; font-size: .8rem; }
+        .hero-sticker { position: absolute; right: -17px; bottom: 22px; display: grid; place-items: center; width: 104px; height: 104px; padding: 10px; border: 5px solid var(--black); border-radius: 50%; background: var(--pink); color: var(--black); text-align: center; font-size: .68rem; line-height: 1.25; font-weight: 900; transform: rotate(8deg); }
+
+        /* FRANJA DE MARCA */
+        .brand-strip { background: var(--yellow); padding: 17px 0; overflow: hidden; }
+        .brand-strip p { text-align: center; font-size: .8rem; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; }
+        .brand-strip span { padding: 0 13px; color: var(--blue); }
+
+        /* CATÁLOGO */
+        .catalog { padding: 90px 0 100px; background: var(--light); }
+        .section-heading { text-align: center; max-width: 680px; margin: 0 auto 42px; }
+        .section-heading .eyebrow { color: var(--blue); margin-bottom: 10px; }
+        .section-heading h2 { color: var(--black); font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 15px; }
+        .section-heading p { color: #666675; font-size: .95rem; }
+        .catalog-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 30px; }
+        .catalog-count { color: #686875; font-size: .83rem; font-weight: 600; }
+        .catalog-filters { display: flex; flex-wrap: wrap; gap: 9px; }
+        .filter-btn { padding: 11px 15px; border: 1px solid #DCDCE5; border-radius: 6px; background: var(--white); color: var(--black); font-size: .8rem; font-weight: 800; cursor: pointer; transition: .2s; }
+        .filter-btn:hover { border-color: var(--blue); }
+        .filter-btn.active { background: var(--black); border-color: var(--black); color: var(--yellow); }
+        .products-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 23px; }
+        .product-card[hidden] { display: none !important; }
+        .product-card { min-width: 0; overflow: hidden; background: var(--white); border: 1px solid #E6E6ED; border-radius: 10px; transition: transform .25s, box-shadow .25s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(16,16,20,.09); }
+        .product-image { position: relative; display: grid; place-items: center; aspect-ratio: 1 / 1; overflow: hidden; background: #F4F4F8; }
+        /* contain: la foto se ve completa, sin recortes (si no es cuadrada, quedan bordes) */
+        .product-image > img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform .35s; }
+        .product-card:hover .product-image > img { transform: scale(1.03); }
+        .image-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 20px; text-align: center; color: var(--black); background: linear-gradient(135deg, rgba(255,217,40,.14), transparent 45%, rgba(255,95,162,.12)), repeating-linear-gradient(135deg, #F4F4F8, #F4F4F8 12px, #EEEEF4 12px, #EEEEF4 24px); }
+        .placeholder-icon { display: grid; place-items: center; width: 65px; height: 65px; border-radius: 14px; background: var(--yellow); font-size: 1.9rem; }
+        .image-placeholder strong { font-size: .8rem; }
+        .image-placeholder small { color: #696977; font-size: .8rem; }
+        .product-category { display: inline-block; margin-bottom: 10px; color: var(--blue); font-size: .8rem; font-weight: 900; letter-spacing: .7px; text-transform: uppercase; }
+        .product-info { padding: 18px; }
+        .product-info h3 { font-size: 1rem; line-height: 1.4; margin-bottom: 9px; }
+        .product-info p { min-height: 42px; color: #777784; font-size: .8rem; margin-bottom: 15px; }
+        .product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 13px; border-top: 1px solid #EEEEF2; }
+        .product-price { color: var(--black); font-size: .85rem; font-weight: 900; }
+        .product-price small { display: block; color: #898995; font-size: .8rem; font-weight: 500; }
+        .product-order { display: inline-flex; align-items: center; justify-content: center; min-height: 39px; padding: 9px 12px; border: none; border-radius: 6px; color: var(--white); background: var(--blue); font-size: .8rem; font-weight: 800; cursor: pointer; transition: .2s; }
+        .product-order:hover { background: var(--black); color: var(--yellow); }
+        .empty-state { grid-column: 1 / -1; padding: 45px 20px; text-align: center; color: #777784; }
+
+        /* FRANJA PARA SOLICITUDES PERSONALIZADAS */
+        .custom-banner { padding: 70px 0; color: var(--black); background: var(--pink); }
+        .custom-content { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+        .custom-content h2 { max-width: 650px; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.15; margin-bottom: 12px; }
+        .custom-content p { max-width: 630px; font-size: .92rem; }
+        .btn-black { flex-shrink: 0; color: var(--white); background: var(--black); }
+
+        /* CONTACTO */
+        .contact { padding: 85px 0; color: var(--white); background: var(--black); }
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; }
+        .contact .eyebrow { color: var(--yellow); }
+        .contact h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; margin-bottom: 18px; }
+        .contact-description { max-width: 500px; color: #B9B9C5; font-size: .9rem; }
+        .contact-details { display: grid; gap: 17px; }
+        .contact-item { display: flex; align-items: flex-start; gap: 15px; padding: 18px; border: 1px solid var(--border); border-radius: 8px; background: var(--dark); }
+        .contact-icon { flex-shrink: 0; display: grid; place-items: center; width: 43px; height: 43px; border-radius: 8px; background: var(--yellow); color: var(--black); font-size: 1.2rem; }
+        .contact-item h3 { font-size: .88rem; margin-bottom: 4px; }
+        .contact-item p, .contact-item a { color: #B9B9C5; font-size: .8rem; overflow-wrap: anywhere; }
+        .contact-item a:hover { color: var(--yellow); }
+
+        /* PIE DE PÁGINA Y WHATSAPP */
+        .footer { padding: 25px 0; color: #A5A5B2; background: #09090C; border-top: 1px solid #292932; }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+        .footer p { font-size: .8rem; }
+        .footer strong { color: var(--white); }
+        .footer-accent { color: var(--pink); }
+        .whatsapp-float { position: fixed; z-index: 999; right: 22px; bottom: 22px; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; color: var(--black); background: var(--yellow); box-shadow: 0 8px 25px rgba(0,0,0,.22); font-size: 1.1rem; font-weight: 900; transition: transform .2s; }
+        .whatsapp-float:hover { transform: scale(1.08); }
+
+        /* ADAPTACIÓN A TABLETS Y CELULARES */
+        @media (max-width: 1000px) {
+            .products-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .hero-content { gap: 30px; }
+            .nav-links { gap: 15px; }
+            .brand-logo { width: 365px; height: 82px; }
+        }
+        @media (max-width: 760px) {
+            .hero { padding: 65px 0 55px; }
+            .hero-content { grid-template-columns: 1fr; gap: 33px; }
+            .hero h1 { letter-spacing: -1.7px; }
+            .hero-visual { width: min(100%, 530px); margin: auto; }
+            .hero-sticker { right: -8px; bottom: 13px; width: 84px; height: 84px; font-size: .6rem; }
+            .catalog { padding: 65px 0; }
+            .catalog-toolbar { align-items: flex-start; flex-direction: column; }
+            .catalog-filters { width: 100%; }
+            .filter-btn { flex: 1 1 auto; }
+            .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+            .product-info { padding: 12px; }
+            .product-info h3 { font-size: .87rem; }
+            .product-info p { font-size: .8rem; }
+            .product-bottom { flex-direction: column; align-items: stretch; }
+            .product-order { width: 100%; }
+            .custom-content { align-items: flex-start; flex-direction: column; }
+            .contact-layout { grid-template-columns: 1fr; gap: 35px; }
+            .footer-content { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 380px) {
+            .products-grid { grid-template-columns: 1fr; }
+            .hero-actions .btn { width: 100%; }
+            .filter-btn { font-size: .8rem; padding: 10px 8px; }
+        }
+
+        /* MEJORAS: foco visible, movimiento reducido, menú móvil */
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; box-shadow: 0 0 0 2px #fff; }
+        .nav-toggle { display: none; align-items: center; justify-content: center; flex: 0 0 auto; width: 46px; height: 46px; border: 1px solid var(--border); border-radius: 8px; background: transparent; cursor: pointer; }
+        .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after { display: block; width: 20px; height: 2px; border-radius: 2px; background: #fff; transition: transform .2s, top .2s; }
+        .nav-toggle span { position: relative; }
+        .nav-toggle span::before, .nav-toggle span::after { content: ""; position: absolute; left: 0; }
+        .nav-toggle span::before { top: -6px; } .nav-toggle span::after { top: 6px; }
+        .nav-toggle[aria-expanded="true"] span { background: transparent; }
+        .nav-toggle[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
+        .nav-toggle[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
+        @media (max-width: 760px) {
+            .nav-content { min-height: 72px; flex-wrap: nowrap; padding: 6px 0; }
+            .brand-logo { width: min(260px, 62vw); height: 56px; }
+            .nav-toggle { display: inline-flex; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 6px 5% 16px; background: var(--black); border-bottom: 1px solid var(--border); }
+            .nav-links.open { display: flex; }
+            .nav-links a { padding: 14px 4px; font-size: .95rem; border-bottom: 1px solid var(--border); }
+            .nav-links .nav-cta { margin-top: 12px; padding: 14px; text-align: center; border: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; }
+            .btn:hover, .whatsapp-float:hover { transform: none; }
+        }
+
+        /* LOGO: pétalos + nombre en texto */
+        .logo { gap: 11px; }
+        .logo-mark { width: 46px; height: 46px; flex: 0 0 auto; }
+        @media (max-width: 760px) { .logo-mark { width: 36px; height: 36px; } .logo { gap: 8px; } }
+    </style>
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#inicio" class="logo" aria-label="ServilightGG, inicio" title="Volver al inicio">
+                <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+                    <g transform="translate(50 54)">
+                        <path d="M0 0C-12-6-22-24-15-37C-8-48 10-47 14-36C18-24 8-10 0 0Z" transform="rotate(-10)" fill="#E4007C"/>
+                        <path d="M0 0C-12-6-22-24-15-37C-8-48 10-47 14-36C18-24 8-10 0 0Z" transform="rotate(65)" fill="#FFD928"/>
+                        <path d="M0 0C-12-6-22-24-15-37C-8-48 10-47 14-36C18-24 8-10 0 0Z" transform="rotate(215)" fill="#00A3DD"/>
+                        <path d="M0 0C-12-6-22-24-15-37C-8-48 10-47 14-36C18-24 8-10 0 0Z" transform="rotate(285)" fill="#F5F5F8"/>
+                    </g>
+                </svg>
+                <span class="logo-fallback">SERVILIGHT<span>GG</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+            <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#personaliza">Personaliza</a>
+                <a href="#contacto">Contacto</a>
+                <a class="nav-cta" data-wa="" target="_blank" rel="noopener noreferrer">Cotizar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PORTADA: coloca tu foto en Portada.jpeg -->
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+                <div>
+                    <span class="eyebrow">Creatividad que se convierte en realidad</span>
+                    <h1>Tus ideas.<br>Nuestro <span class="highlight">estilo.</span></h1>
+                    <p>Impresión, personalización textil, regalos y productos personalizados para personas, negocios y eventos. Dale vida a tus ideas con ServilightGG.</p>
+                    <div class="hero-actions">
+                        <a href="#catalogo" class="btn btn-yellow">Explorar catálogo →</a>
+                        <a data-wa="" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Consultar por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-photo">
+                        <img src="Portada.jpeg" alt="Trabajos y productos de ServilightGG" onerror="this.style.display='none'; document.getElementById('heroPlaceholder').style.display='flex';">
+                        <div class="hero-placeholder" id="heroPlaceholder" style="display:none">
+                            <span class="upload-symbol">✦</span>
+                            <strong>ServilightGG</strong>
+                            <small>Impresión y personalización a tu medida.</small>
+                        </div>
+                    </div>
+                    <div class="hero-sticker">SOLUCIONES<br>QUE DEJAN<br>HUELLA ✦</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FRANJA DE MARCA -->
+        <div class="brand-strip">
+            <div class="container"><p>Diseño <span>✦</span> Impresión <span>✦</span> Personalización <span>✦</span> Creatividad <span>✦</span> Calidad</p></div>
+        </div>
+
+        <!-- CATÁLOGO -->
+        <section class="catalog" id="catalogo">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Hecho para tus ideas</span>
+                    <h2>Nuestro catálogo</h2>
+                    <p>Explora los productos, encuentra lo que buscas y contáctanos para personalizarlo a tu gusto.</p>
+                </div>
+                <div class="catalog-toolbar">
+                    <p class="catalog-count" id="catalogCount" aria-live="polite">Explora nuestros productos</p>
+                    <div class="catalog-filters" id="catalogFilters" role="group" aria-label="Filtrar productos"></div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+
+                    <!-- ===== TEXTIL ===== -->
+                    <article class="product-card" data-category="Textil" data-product-name="Camisetas personalizadas">
+                        <div class="product-image"><img src="camiseta.jpeg" alt="Camisetas personalizadas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">👕</span><strong>Camisetas personalizadas</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Camisetas personalizadas</h3><p>Camisetas con diseños para personas, grupos y negocios.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Camisetas personalizadas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Textil" data-product-name="Polos personalizados">
+                        <div class="product-image"><img src="tshirt.jpeg" alt="Polos personalizados" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">👔</span><strong>Polos personalizados</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Polos personalizados</h3><p>Polos personalizados para equipos, marcas y actividades.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Polos personalizados">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Textil" data-product-name="Batas de laboratorio personalizadas">
+                        <div class="product-image"><img src="Bata.jpeg" alt="Batas de laboratorio personalizadas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🥼</span><strong>Batas de laboratorio</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Batas de laboratorio personalizadas</h3><p>Opciones personalizadas para empresas y grupos.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Batas de laboratorio personalizadas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Textil" data-product-name="Gorras personalizadas">
+                        <div class="product-image"><img src="Gorras.jpeg" alt="Gorras personalizadas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🧢</span><strong>Gorras personalizadas</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Gorras personalizadas</h3><p>Gorras con diseños para ocasiones especiales o marcas.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Gorras personalizadas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Textil" data-product-name="Bolsas personalizadas">
+                        <div class="product-image"><img src="Bolso.jpeg" alt="Bolsas personalizadas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">👜</span><strong>Bolsas personalizadas</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Bolsas personalizadas</h3><p>Bolsas de tela con tu logo o diseño, ideales para eventos y tiendas.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Bolsas personalizadas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Textil" data-product-name="Delantales personalizados">
+                        <div class="product-image"><img src="delantal.jpeg" alt="Delantales personalizados" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🧑‍🍳</span><strong>Delantales personalizados</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Delantales personalizados</h3><p>Delantales para restaurantes, cafeterías y talleres con tu marca.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Delantales personalizados">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Textil" data-product-name="Banderas institucionales">
+                        <div class="product-image"><img src="Bandera.jpeg" alt="Banderas en tela" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🚩</span><strong>Banderas institucionales</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Textil</span><h3>Bandera institucional Exterior e Interior</h3><p>Banderas en tela para uso exterior e interior, con tu escudo o logo.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Banderas institucionales">Consultar →</button></div></div>
+                    </article>
+
+                    <!-- ===== DISEÑO E IMPRESIÓN ===== -->
+                    <article class="product-card" data-category="Diseño e impresión" data-product-name="Señalizaciones">
+                        <div class="product-image"><img src="Señales.jpeg" alt="Señalizaciones" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🪧</span><strong>Señalizaciones</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Diseño e impresión</span><h3>Señalizaciones</h3><p>Diseños visuales para marcas, eventos y proyectos.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Señalizaciones">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Diseño e impresión" data-product-name="Etiquetas y stickers">
+                        <div class="product-image"><img src="stiker.png" alt="Etiquetas y stickers" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">✦</span><strong>Etiquetas y stickers</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Diseño e impresión</span><h3>Etiquetas y stickers</h3><p>Opciones gráficas para identificar y decorar tus productos.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Etiquetas y stickers">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Diseño e impresión" data-product-name="Tarjetas personalizadas">
+                        <div class="product-image"><img src="Tarjeta.jpeg" alt="Tarjetas personalizadas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">💳</span><strong>Tarjetas personalizadas</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Diseño e impresión</span><h3>Tarjetas personalizadas</h3><p>Tarjetas impresas con el diseño de tu negocio.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Tarjetas personalizadas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Diseño e impresión" data-product-name="Buzón de sugerencias">
+                        <div class="product-image"><img src="Buzon .jpeg" alt="Buzón de sugerencias" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">📮</span><strong>Buzón de sugerencias</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Diseño e impresión</span><h3>Buzón de sugerencias</h3><p>Buzones personalizados para empresas, escuelas e instituciones.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Buzón de sugerencias">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Diseño e impresión" data-product-name="Banners y lonas">
+                        <div class="product-image"><img src="Banner.jpg" alt="Banners y lonas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🖼️</span><strong>Banners y lonas</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Diseño e impresión</span><h3>Banners y lonas</h3><p>Lonas y banners en gran formato para fachadas, ferias y eventos.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Banners y lonas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Diseño e impresión" data-product-name="Talonarios">
+                        <div class="product-image"><img src="Talonarios.jpeg" alt="Talonarios" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🧾</span><strong>Talonarios</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Diseño e impresión</span><h3>Talonarios</h3><p>Talonarios personalizados para negocios.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Talonarios">Consultar →</button></div></div>
+                    </article>
+
+                    <!-- ===== REGALOS Y OBJETOS ===== -->
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Medallas de reconocimiento">
+                        <div class="product-image"><img src="Medallas.jpeg" alt="Medallas de reconocimiento" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🥇</span><strong>Medallas de reconocimiento</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Medallas de Reconocimiento</h3><p>Medallas de reconocimiento personalizadas para premiaciones y eventos.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Medallas de reconocimiento">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Reconocimientos en acrílico">
+                        <div class="product-image"><img src="Reconocimientos.jpeg" alt="Reconocimientos en acrílico" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🏆</span><strong>Reconocimientos en acrílico</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Reconocimientos en Cristal</h3><p>Reconocimientos personalizados para regalar.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Reconocimientos en acrílico">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Carteles en acrílico">
+                        <div class="product-image"><img src="Carteles.jpeg" alt="Carteles en acrílico" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🪧</span><strong>Carteles en acrílico</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Carteles en Acrílico</h3><p>Carteles personalizados en acrílico para decoración o promoción.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Carteles en acrílico">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Tazas personalizadas">
+                        <div class="product-image"><img src="Tasas.jpeg" alt="Tazas personalizadas" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">☕</span><strong>Tazas personalizadas</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Tazas personalizadas</h3><p>Tazas con diseño o mensaje para regalar o promocionar tu marca.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Tazas personalizadas">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Termos personalizados">
+                        <div class="product-image"><img src="Termos.jpeg" alt="Termos personalizados" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🥤</span><strong>Termos personalizados</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Termos personalizados</h3><p>Termos con diseño o mensaje personalizado.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Termos personalizados">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Impresión de libros">
+                        <div class="product-image"><img src="Libros.jpeg" alt="Impresión de libros" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">📚</span><strong>Impresión de libros</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Impresión de Libros</h3><p>Impresión y empastado de libros personalizados.</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Impresión de libros">Consultar →</button></div></div>
+                    </article>
+
+                    <article class="product-card" data-category="Regalos y objetos" data-product-name="Reconocimientos en acrílico">
+                        <div class="product-image"><img src="reco.jpeg" alt="Reconocimientos en acrílico" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">🏅</span><strong>Reconocimientos en acrílico</strong><small>Foto próximamente</small></div></div>
+                        <div class="product-info"><span class="product-category">Regalos y objetos</span><h3>Reconocimientos en madera</h3><p>Reconocimientos en madera para regalar</p>
+                            <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por Reconocimientos en acrílico">Consultar →</button></div></div>
+                    </article>
+
+                   
+                </div>
+                <noscript><p style="text-align:center;padding:30px">Activa JavaScript para usar los filtros o escríbenos al +1 809-527-8494.</p></noscript>
+            </div>
+        </section>
+
+        <!-- FRANJA PARA SOLICITUDES PERSONALIZADAS -->
+        <section class="custom-banner" id="personaliza">
+            <div class="container custom-content">
+                <div>
+                    <h2>¿Tienes una idea especial?</h2>
+                    <p>Cuéntanos qué necesitas. Podemos conversar sobre diseños, cantidades, colores y opciones de personalización para tu proyecto.</p>
+                </div>
+                <a class="btn btn-black" data-wa="Hola ServilightGG, quiero consultar sobre una personalización." target="_blank" rel="noopener noreferrer">Hablemos de tu idea →</a>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact" id="contacto">
+            <div class="container contact-layout">
+                <div>
+                    <span class="eyebrow">Estamos para ayudarte</span>
+                    <h2>Hagamos algo increíble.</h2>
+                    <p class="contact-description">¿Quieres consultar un producto, solicitar una cotización o conocer nuestras opciones de personalización? Contáctanos por el canal que prefieras.</p>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item"><div class="contact-icon">☎</div><div><h3>WhatsApp y teléfono</h3><a href="tel:+18095278494">+1 809-527-8494</a> · <a data-wa="" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a></div></div>
+                    <div class="contact-item"><div class="contact-icon">✉</div><div><h3>Correo electrónico</h3><a href="mailto:ventasservilight@outlook.com">ventasservilight@outlook.com</a></div></div>
+                    <div class="contact-item"><div class="contact-icon">⌖</div><div><h3>Ubicación</h3><p>Calle Circunvalación #98, Lavapiés, San Cristóbal, República Dominicana</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Circunvalaci%C3%B3n+98+San+Crist%C3%B3bal+Rep%C3%BAblica+Dominicana" target="_blank" rel="noopener noreferrer">Ver en el mapa →</a></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="currentYear"></span> <strong>ServilightGG</strong>. Todos los derechos reservados.</p>
+            <p>Soluciones que <span class="footer-accent">dejan huella.</span></p>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a class="whatsapp-float" data-wa="" target="_blank" rel="noopener noreferrer" aria-label="Contactar a ServilightGG por WhatsApp" title="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.78a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></svg></a>
+
+    <script>
+const PHONE = "18095278494";
+const wa = t => `https://wa.me/${PHONE}` + (t ? `?text=${encodeURIComponent(t)}` : "");
+document.querySelectorAll("[data-wa]").forEach(a => a.href = wa(a.dataset.wa));
+
+const grid = document.getElementById("productsGrid");
+const count = document.getElementById("catalogCount");
+const bar = document.getElementById("catalogFilters");
+
+// ===== PRODUCTOS NUEVOS: una línea por producto =====
+// [categoría, nombre, descripción, archivo de imagen, emoji de respaldo]
+const NUEVOS = 
+  [
+  ["Regalos y objetos", "Placas en acrílico", "Placas de reconocimiento impresas en acrílico con base.", "placa-acrilico.jpeg", "🏅"],
+  ["Regalos y objetos", "Reconocimientos en cristal con forma ", "Reconocimientos en cristal con forma, ideales para premiaciones.", "reconocimiento-tallado.jpeg", "🔷"],
+  ["Regalos y objetos", "Medallas con cinta", "Medallas doradas con cinta tricolor y diseño personalizado.", "medallas-cinta.jpeg", "🥇"],
+  ["Regalos y objetos", "Llaveros en acrílico", "Llaveros con tu diseño o mensaje, con borla y argolla.", "llavero.jpeg", "🔑"],
+  
+  ["Regalos y objetos", "Lapiceros y marcapáginas", "Sets personalizados para fechas especiales y eventos.", "lapiceros-marcapaginas.jpeg", "🖊️"],
+  ["Diseño e impresión", "Registros educativos", "Registros educativos personalizados.", "Registro.jpeg", "🥤"],
+  ["Diseño e impresión", "Diplomas enmarcados", "Diplomas y certificados impresos con marco.", "diplomas-enmarcados.jpeg", "📜"],
+  ["Diseño e impresión", "Tesis y libros empastados", "Empastado en tapa dura con letras doradas.", "empastado-tesis.jpeg", "📚"],
+  ["Diseño e impresión", "Carpetas de graduación", "Carpetas y folders con impresión dorada.", "carpetas-graduacion.jpeg", "🎓"],
+  ["Diseño e impresión", "Letras corpóreas 3D", "Letras en relieve para fachadas e interiores.", "letras-3d.jpeg", "🔠"],
+  
+];
+
+const esc = s => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+NUEVOS.forEach(([cat, nombre, desc, img, emoji]) => {
+  grid.insertAdjacentHTML("beforeend", `
+    <article class="product-card" data-category="${esc(cat)}" data-product-name="${esc(nombre)}">
+      <div class="product-image"><img src="${esc(img)}" alt="${esc(nombre)}" loading="lazy" decoding="async"><div class="image-placeholder" style="display:none"><span class="placeholder-icon">${emoji}</span><strong>${esc(nombre)}</strong><small>Foto próximamente</small></div></div>
+      <div class="product-info"><span class="product-category">${esc(cat)}</span><h3>${esc(nombre)}</h3><p>${esc(desc)}</p>
+        <div class="product-bottom"><div class="product-price">Consultar<small>Precio sujeto a consulta</small></div><button class="product-order" type="button" aria-label="Consultar por ${esc(nombre)}">Consultar →</button></div></div>
+    </article>`);
+});
+
+// Las categorías se leen directamente de las tarjetas del HTML
+const cats = ["Todos", ...new Set([...grid.children].map(c => c.dataset.category))];
+bar.innerHTML = cats.map((c, i) => `<button class="filter-btn${i ? "" : " active"}" type="button" data-filter="${c}" aria-pressed="${!i}">${c}</button>`).join("");
+
+// Si una imagen no carga (link vacío o roto), se muestra el emoji de respaldo
+grid.querySelectorAll(".product-image img").forEach(img => {
+  const fallback = () => { img.style.display = "none"; img.nextElementSibling.style.display = "flex"; };
+  img.addEventListener("error", fallback);
+  if (img.complete && img.naturalWidth === 0) fallback();
+});
+
+function actualizarConteo() {
+  const n = [...grid.children].filter(c => !c.hidden).length;
+  count.textContent = n === 1 ? "1 producto disponible" : `${n} productos disponibles`;
+}
+bar.addEventListener("click", e => {
+  const b = e.target.closest(".filter-btn"); if (!b) return;
+  bar.querySelectorAll(".filter-btn").forEach(o => { o.classList.toggle("active", o === b); o.setAttribute("aria-pressed", o === b); });
+  [...grid.children].forEach(c => c.hidden = b.dataset.filter !== "Todos" && c.dataset.category !== b.dataset.filter);
+  actualizarConteo();
+});
+// Solo el botón "Consultar" abre WhatsApp
+grid.addEventListener("click", e => {
+  const b = e.target.closest(".product-order"); if (!b) return;
+  const card = b.closest(".product-card");
+  window.open(wa(`Hola ServilightGG, me interesa el producto: ${card.dataset.productName}. Categoría: ${card.dataset.category}. Quisiera conocer el precio y las opciones de personalización.`), "_blank", "noopener,noreferrer");
+});
+
+// Menú móvil
+const toggle = document.querySelector(".nav-toggle"), links = document.getElementById("navLinks");
+const setMenu = o => { links.classList.toggle("open", o); toggle.setAttribute("aria-expanded", o); toggle.setAttribute("aria-label", o ? "Cerrar menú" : "Abrir menú"); };
+toggle.addEventListener("click", () => setMenu(!links.classList.contains("open")));
+links.addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+actualizarConteo();
+</script>
+</body>
+</html>
